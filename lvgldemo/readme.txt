@@ -1,0 +1,4 @@
+480
+320
+LV_HOR_RES_MAX
+CanvasDrawPixel

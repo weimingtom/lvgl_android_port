@@ -1,2 +1,2 @@
 # lvgl_android_port
-My LVGL 7 lvgldemo Android port
+[WIP] My LVGL 7 lvgldemo Android port, currently without touch input  
