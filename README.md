@@ -3,3 +3,5 @@
 
 ## copyPixelsFromBuffer
 * https://github.com/devolonter/Pretty-Painter/blob/master/src/org/sprite2d/apps/pp/PainterThread.java
+
+## https://github.com/ironsteel/ogre-android-demo
