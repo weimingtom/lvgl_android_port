@@ -23,17 +23,23 @@ this.setZOrderOnTop(true);
 //-------------------
 
 
-private void repaint() {
-	if (false) {
-		invalidate(); //FIXME:test this if not shown.
-		// solved, use setZOrderOnTop
-	} else {
-		Canvas canvas = null;
-		SurfaceHolder surfaceHolder = getHolder();
-		try {
-			if (!surfaceHolder.getSurface().isValid())
-				return;
-				
+    private void repaint() {
+        if (false) {
+            invalidate(); //FIXME:test this if not shown.
+            // solved, use setZOrderOnTop
+        } else {
+            Canvas canvas = null;
+            SurfaceHolder surfaceHolder = getHolder();
+            try {
+                if (surfaceHolder.getSurface() != null &&
+                        !surfaceHolder.getSurface().isValid())
+                    return;
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    canvas = surfaceHolder.lockHardwareCanvas();
+                } else {
+                    canvas = surfaceHolder.lockCanvas();
+                }
 
 ```
 
