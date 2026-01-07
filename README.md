@@ -10,6 +10,8 @@
 
 ## Bug for Android 14 emulator
 ```
+requestFocus();
+
 //-------------------
 //FIXME:added
 //<item name="android:background">#00000</item>
