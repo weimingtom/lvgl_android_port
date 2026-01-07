@@ -7,3 +7,17 @@
 ## https://github.com/ironsteel/ogre-android-demo
 
 ## https://github.com/hanxinhao000/DosBoxAndroid  
+
+## Bug for Android 14 emulator
+```
+//-------------------
+//FIXME:added
+//<item name="android:background">#00000</item>
+//https://stackoverflow.com/questions/21311573/surfaceview-shows-black-screen-android
+this.setBackgroundColor(0x00000000);
+//https://stackoverflow.com/questions/3818284/android-surfaceholder-unlockcanvasandpost-does-not-cause-redraw
+this.setZOrderOnTop(true);
+//this.setAlpha(1.0f);
+//-------------------
+```
+
