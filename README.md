@@ -19,5 +19,19 @@ this.setBackgroundColor(0x00000000);
 this.setZOrderOnTop(true);
 //this.setAlpha(1.0f);
 //-------------------
+
+
+private void repaint() {
+	if (false) {
+		invalidate(); //FIXME:test this if not shown.
+		// solved, use setZOrderOnTop
+	} else {
+		Canvas canvas = null;
+		SurfaceHolder surfaceHolder = getHolder();
+		try {
+			if (!surfaceHolder.getSurface().isValid())
+				return;
+				
+
 ```
 
