@@ -1,6 +1,10 @@
 # lvgl_android_port
 [WIP] My LVGL 7 lvgldemo Android port, currently without touch input  
 
+## (TODO) LVGL9AndroidDemo and LV9AndroidWatch
+* https://github.com/zhuhai-and/LVGL9AndroidDemo
+* https://github.com/zhuhai-and/LV9AndroidWatch
+
 ## copyPixelsFromBuffer
 * https://github.com/devolonter/Pretty-Painter/blob/master/src/org/sprite2d/apps/pp/PainterThread.java
 
